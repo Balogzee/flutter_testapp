@@ -2,8 +2,19 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(
   MaterialApp(
-    home: Center(
-      child: Text('Hello World'),
+    home: Scaffold(
+      backgroundColor: Colors.blueGrey,
+      
+      appBar: AppBar(
+        title: Text(
+          'I am Awesome'
+        ),
+        backgroundColor: Colors.blueGrey[900],
+      ),
+      body: Center(child:
+      Image(
+        image: NetworkImage('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/220px-Image_created_with_a_mobile_phone.png'))
+      ),
     ),
-  )
+  ),
   );
